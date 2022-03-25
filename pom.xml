@@ -12,6 +12,8 @@
 
     <modules>
         <module>spring-boot-samples-mybatis-plus</module>
+        <module>spring-boot-samples-mysql</module>
+        <module>spring-boot-samples-openapi</module>
         <module>spring-boot-samples-redis</module>
     </modules>
 
@@ -28,6 +30,7 @@
         <java.version>1.8</java.version>
         <mybatisplus.version>3.5.1</mybatisplus.version>
         <mysql.connector.version>8.0.26</mysql.connector.version>
+        <springdoc.openapi.version>1.6.6</springdoc.openapi.version>
     </properties>
 
     <dependencyManagement>
@@ -41,6 +44,11 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.connector.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.openapi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -60,6 +68,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
         </dependency>
     </dependencies>
 
