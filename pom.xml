@@ -11,6 +11,7 @@
     <description>spring boot samples</description>
 
     <modules>
+        <module>spring-boot-samples-actuator</module>
         <module>spring-boot-samples-mybatis-plus</module>
         <module>spring-boot-samples-mysql</module>
         <module>spring-boot-samples-openapi</module>
